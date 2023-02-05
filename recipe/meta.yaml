@@ -16,13 +16,13 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
     - poetry
   run:
-    - python >=3.7
+    - python >=3.8
     - httpx >=0.23.0
-    - pydantic >=1.9.1
+    - pydantic >=1.10.0
 
 test:
   requires:
