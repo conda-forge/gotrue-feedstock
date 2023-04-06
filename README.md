@@ -1,11 +1,11 @@
-About gotrue
-============
+About gotrue-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gotrue-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/supabase-community/gotrue-py
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gotrue-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python client implementation of Supabase's GoTrue
 
