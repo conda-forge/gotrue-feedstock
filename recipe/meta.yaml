@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.8
     - httpx >=0.23.0
-    - pydantic >=1.10.0
+    - pydantic >=1.10.0,<3
 
 test:
   requires:
