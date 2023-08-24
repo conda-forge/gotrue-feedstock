@@ -1,5 +1,5 @@
 {% set name = "gotrue" %}
-{% set version = "1.0.3" %}
+{% set version = "1.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: faa146ce690d32697abebdb2f49116603f28e100fa5e1a24a978615559e7cac5
+  sha256: 2686c93b798fb2d3b120f067d21e66bb803b013ee6ab6fb7783093102f74603a
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.8
     - httpx >=0.23.0
-    - pydantic >=1.10.0
+    - pydantic >=1.10.0,<3
 
 test:
   requires:
