@@ -19,7 +19,6 @@ requirements:
     - python >=3.8
     - pip
     - poetry <1.6
-    - six
   run:
     - python >=3.8
     - httpx >=0.23.0,<0.25
