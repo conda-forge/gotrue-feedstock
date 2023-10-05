@@ -18,7 +18,7 @@ requirements:
   host:
     - python >=3.8
     - pip
-    - poetry
+    - poetry <1.6
     - six
   run:
     - python >=3.8
