@@ -16,16 +16,17 @@ build:
 
 requirements:
   host:
-    - python >=3.8,<4.0
+    - python {{ python_min }}
     - poetry-core >=1.0.0
     - pip
   run:
-    - python >=3.8,<4.0
+    - python >={{ python_min }}
     - httpx >=0.26,<0.28
     - pydantic >=1.10,<3
 
 test:
   requires:
+    - python {{ python_min }}
     - pip
   commands:
     - pip check
