@@ -10,22 +10,23 @@ source:
   sha256: a0a452748ef741337820c97b934327c25f796e7cd33c0bf4341346bcc5a837f5
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python >=3.8,<4.0
+    - python {{ python_min }}
     - poetry-core >=1.0.0
     - pip
   run:
-    - python >=3.8,<4.0
+    - python >={{ python_min }}
     - httpx >=0.26,<0.28
     - pydantic >=1.10,<3
 
 test:
   requires:
+    - python {{ python_min }}
     - pip
   commands:
     - pip check
