@@ -1,5 +1,5 @@
 {% set name = "gotrue" %}
-{% set version = "2.11.0" %}
+{% set version = "2.11.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a0a452748ef741337820c97b934327c25f796e7cd33c0bf4341346bcc5a837f5
+  sha256: 5594ceee60bd873e5f4fdd028b08dece3906f6013b6ed08e7786b71c0092fed0
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - httpx >=0.26,<0.28
+    - httpx >=0.26,<0.29
     - pydantic >=1.10,<3
 
 test:
